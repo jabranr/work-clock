@@ -1,0 +1,24 @@
+{
+  "name": "work-clock",
+  "version": "1.0.0",
+  "description": "A macOS menu bar app to display time for a different timezone",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve -s .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jabranr/work-clock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jabranr/work-clock/issues"
+  },
+  "homepage": "https://github.com/jabranr/work-clock#readme",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}
