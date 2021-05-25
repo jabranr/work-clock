@@ -1,6 +1,6 @@
 # Work Clock
 
-A macOS menu bar app to display time for a different timezone
+A macOS menubar app to display time for a different timezone
 
 > This repository contains code for the website of Work Clock
 
