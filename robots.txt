@@ -1,0 +1,4 @@
+# https://www.jabran.me/work-clock
+
+User-agent: *
+Disallow
