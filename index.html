@@ -7,7 +7,7 @@
   <title>Work Clock – Jabran Rafique</title>
   <meta name="description" content="A macOS menubar app to display time for a different timezone">
   <meta name="author" content="Jabran Rafique">
-	<link rel="canonical" href="https://jabran.me/work-clock/">
+	<link rel="canonical" href="https://work-clock.jabran.dev/">
 
   <meta name="robots" content="noodp">
   <meta name="googlebot" content="all, index, follow">
@@ -16,9 +16,9 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Work Clock – Jabran Rafique">
-  <meta property="og:url" content="https://jabran.me/work-clock/">
+  <meta property="og:url" content="https://work-clock.jabran.dev/">
   <meta property="og:description" content="A macOS menubar app to display time for a different timezone">
-  <meta property="og:image" content="https://jabran.me/work-clock/assets/@1024px.png">
+  <meta property="og:image" content="https://work-clock.jabran.dev/assets/@1024px.png">
 
   <meta name="twitter:account_id" content="4503599628147464">
   <meta name="twitter:card" content="summary_large_image">
@@ -26,16 +26,16 @@
   <meta name="twitter:creator" content="@jabranr">
   <meta name="twitter:title" content="Work Clock – Jabran Rafique">
   <meta name="twitter:description" content="A macOS menubar app to display time for a different timezone">
-  <meta name="twitter:domain" content="https://jabran.me">
-  <meta name="twitter:image" content="https://jabran.me/work-clock/assets/@1024px.png">
+  <meta name="twitter:domain" content="work-clock.jabran.dev">
+  <meta name="twitter:image" content="https://work-clock.jabran.dev/assets/@1024px.png">
 
   <link rel="shortcut icon" href="./assets/favicon.ico">
-  <link rel="apple-touch-icon" href="https://jabran.me/work-clock/assets/@64px.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://jabran.me/work-clock/assets/@128px.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="https://jabran.me/work-clock/assets/@128px.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="https://jabran.me/work-clock/assets/@256px.png">
+  <link rel="apple-touch-icon" href="https://work-clock.jabran.dev/assets/@64px.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://work-clock.jabran.dev/assets/@128px.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://work-clock.jabran.dev/assets/@128px.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://work-clock.jabran.dev/assets/@256px.png">
 
-  <link href="./style.css?v=1621965499" rel="stylesheet">
+  <link href="./style.css?v=1761436800" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-44G2PZXN28"></script>
   <script>
@@ -51,19 +51,27 @@
       <h1 class="heading">Work Clock</h1>
       <p class="lead">A macOS menubar app to display time for a different timezone</p>
       <img class="logo" src="./assets/work-clock-logo.png" alt="Work Clock Logo" width="256px" height="256px" />
-      <a class="download" href="https://apps.apple.com/app/id1568934503">
-        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&releaseDate=1615852800&h=cee5f6c14d96943ca54840baf730b1f3" alt="Download on the App Store" />
-      </a>
+      <a class="download" href="https://github.com/jabranr/work-clock/releases/latest/download/WorkClock.dmg" onclick="gtag('event', 'download', { file_name: 'WorkClock.dmg' })">Download for macOS</a>
+      <p class="download-meta">Free &middot; Universal (Apple Silicon &amp; Intel) &middot; <a href="https://github.com/jabranr/work-clock/releases">All releases</a></p>
     </header>
     <div class="content">
       <p>Work Clock displays the time for another timezone in macOS menubar. It's handy when you work remotely from a different timezone and need to keep track of the work clock when scheduling meetings or discuss time in messages or calls.</p>
-      <p>Work Clock requires macOS 10.12 or later. Work Clock is a one-time purchase with all the updates/upgrades forever.</p>
+      <p>Work Clock requires macOS 10.13 or later. Work Clock is free to download and use.</p>
       <h3>Features</h3>
       <ul>
         <li>Display time in 12-hour or 24-hour format</li>
         <li>Show/hide seconds</li>
         <li>Select a timezone from a list of 40+ timezones covering the whole world</li>
       </ul>
+      <h3>Installation</h3>
+      <ol>
+        <li>Download <code>WorkClock.dmg</code> and open it.</li>
+        <li>Drag Work Clock into the Applications folder.</li>
+        <li>Open Work Clock from Applications. Because the app is not notarized by Apple, macOS will block it the first time.</li>
+        <li>Open <strong>System Settings &rarr; Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong> next to the Work Clock message, then confirm. On macOS 14 or earlier you can instead right-click the app, choose <strong>Open</strong> and confirm.</li>
+      </ol>
+      <p>Alternatively, remove the quarantine flag from Terminal:</p>
+      <pre><code>xattr -dr com.apple.quarantine "/Applications/WorkClock.app"</code></pre>
       <h3>Story</h3>
       <p>Recently it became difficult for me to work out the correct UK time while I was working remotely from Pakistan. I tried a few apps and macOS clock widget however none of those were satisfactory. I had to follow a few steps and clicks in order to view the current time for the UK.</p>
       <p>So I created this app to solve the problem and also learned macOS development. I hope this helps other people with a similar problem.</p>

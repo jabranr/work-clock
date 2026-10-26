@@ -154,9 +154,53 @@ h3 + p {
   display: block;
 }
 
-.download img {
-  width: 250px;
-  height: 83px;
+.download {
+  padding: 0.75em 1.75em;
+  border-radius: 12px;
+  background-color: #fafafa;
+  color: #0F2027;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: rgba(0,0,0,.2) 2px 2px 8px;
+}
+
+.download:link,
+.download:visited {
+  color: #0F2027;
+}
+
+.download:hover,
+.download:active {
+  text-decoration: none;
+  background-color: #e0f7f7;
+}
+
+.download-meta {
+  font-size: 16px;
+  margin-top: 1em !important;
+}
+
+.content ol {
+  padding-left: 1.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.content li + li {
+  margin-top: 0.5em;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+}
+
+.content pre {
+  overflow-x: auto;
+  margin: 0 0 1em;
+  padding: 0.75em 1em;
+  border-radius: 8px;
+  background-color: rgba(0,0,0,.3);
 }
 
 .media {
